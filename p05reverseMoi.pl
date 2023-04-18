@@ -1,7 +1,7 @@
 rev(L1,X)  :- re(L1,[],X).
 
 re([],X,X).
-re([H|Rest],R,X) :-    re(Rest,[H|R],X).
+re([H|Rest],R,X) :-    re([Rest],[H|R],X).
 
 
 
